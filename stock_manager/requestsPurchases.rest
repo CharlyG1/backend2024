@@ -1,0 +1,31 @@
+### Mostrar todas las compras
+GET http://localhost:3000/purchases/
+
+### Mostrar compra por ID
+GET http://localhost:3000/purchases/1
+
+### Agregar compra
+POST http://localhost:3000/purchases/
+Content-Type: application/json
+
+{
+  "quantity": 50,
+  "purchase_date": "2024-11-26",
+  "payment_method": "cash",
+  "ticket": "ticket123",
+  "invoice": "invoice123",
+  "price": 250.00
+}
+
+### Actualizar compra
+PUT http://localhost:3000/purchases/4
+Content-Type: application/json
+
+{
+  "ticket": "noooooooo",
+  "quantity": 800,
+  "price": 300.00
+}
+
+### Eliminar compra
+DELETE http://localhost:3000/purchases/5

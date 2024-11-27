@@ -1,0 +1,43 @@
+    ### Mostrar todos los productos
+GET http://localhost:3000/products/
+
+### Mostrar producto por ID
+GET http://localhost:3000/products/1
+
+### Agregar producto
+POST http://localhost:3000/products/
+Content-Type: application/json
+
+{
+  "product": "Lápiz",
+  "description": "Lápiz de madera HB",
+  "stock": 100,
+  "measurement_unit": "piece",
+  "price": 5.50,
+  "discount": 0.50
+}
+
+### Agregar producto
+POST http://localhost:3000/products/
+Content-Type: application/json
+
+{
+  "product": "Lapicero",
+  "description": "Lapicero Negro",
+  "stock": 50,
+  "measurement_unit": "piece",
+  "price": 10,
+  "discount": 0.50
+}
+
+### Actualizar producto
+PUT http://localhost:3000/products/2
+Content-Type: application/json
+
+{
+  "stock": 150,
+  "price": 5.00
+}
+
+### Eliminar producto
+DELETE http://localhost:3000/products/2

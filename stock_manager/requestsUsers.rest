@@ -1,0 +1,36 @@
+### Mostrar todos los usuarios
+GET http://localhost:3000/users/
+
+### Mostrar usuario por ID
+GET http://localhost:3000/users/1
+
+### Agregar usuario
+POST http://localhost:3000/users/
+Content-Type: application/json
+
+{
+  "username": "Eduardo",
+  "password": "edu1234",
+  "email": "carlosEDU3@gmail.com"
+}
+
+### Actualizar usuario
+PUT http://localhost:3000/users/4
+Content-Type: application/json
+
+{
+  "username": "Eduardo",
+  "password": "carlos22"
+}
+
+### Login usuario
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+  "username": "Eduardo",
+  "password": "carlos22"
+}
+
+### Eliminar usuario
+DELETE http://localhost:3000/users/3
