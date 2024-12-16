@@ -1,0 +1,26 @@
+GET http://localhost:3000/pokemons
+
+###
+GET http://localhost:3000/pokemons/1
+
+###
+POST http://localhost:3000/pokemons
+Content-Type: application/json
+
+{
+    "name": "pppppp",
+    "image": "agfhkfjgfh"
+    
+}
+
+###
+PUT http://localhost:3000/pokemons/153
+Content-Type: application/json
+
+{
+    "name": "papapapa",
+    "image": "afggjn"
+}
+
+###
+DELETE  http://localhost:3000/pokemons/152
