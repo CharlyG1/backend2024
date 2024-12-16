@@ -1,0 +1,38 @@
+### Mostrar todo el personal
+GET http://localhost:3000/staff/
+
+### Mostrar personal por ID
+GET http://localhost:3000/staff/4
+
+### Agregar personal
+POST http://localhost:3000/staff/
+Content-Type: application/json
+
+{
+  "first_name": "Juan",
+  "last_name": "Pérez",
+  "birth_date": "1990-01-01",
+  "gender": "M",
+  "phone_number": "1234567890",
+  "email": "juan@gmail.com",
+  "address": "Calle 123, Ciudad",
+  "user_id": 1
+}
+
+### Actualizar personal
+PUT http://localhost:3000/staff/5
+Content-Type: application/json
+
+{
+  "first_name": "Juan",
+  "last_name": "López",
+  "birth_date": "2017-09-17",
+  "gender": "M",
+  "phone_number": "1234567890",
+  "email": "juan.perez@gmail.com",
+  "address": "Calle 123, Ciudad",
+  "user_id": 1
+}
+
+### Eliminar personal
+DELETE http://localhost:3000/staff/6

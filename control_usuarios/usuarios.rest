@@ -1,0 +1,35 @@
+GET http://localhost:3000/usuarios
+
+###
+GET http://localhost:3000/usuarios/5
+
+###
+POST http://localhost:3000/usuarios/
+content-type: application/json
+
+{
+  "nombre": "Julio",
+  "apellido": "Aguilar",
+  "email": "julio2@gmail.com"
+}
+
+###
+PUT http://localhost:3000/usuarios/1
+content-type: application/json
+
+{
+  "nombre": "Carlos",
+  "apellido": "Aguilar",
+  "email": "juanperez@gmail.com"
+}
+
+###
+PATCH http://localhost:3000/usuarios/1
+content-type: application/json
+
+{
+  "nombre": "Carlos"
+}
+
+###
+DELETE http://localhost:3000/usuarios/1

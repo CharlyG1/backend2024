@@ -1,0 +1,31 @@
+### Mostrar todos los proveedores
+GET http://localhost:3000/suppliers/
+
+### Mostrar proveedor por RFC
+GET http://localhost:3000/suppliers/ABC1234567890
+
+### Agregar proveedor
+POST http://localhost:3000/suppliers/
+Content-Type: application/json
+
+{
+  "rfc": "ABC1234567890",
+  "name": "Proveedor SA",
+  "description": "Distribuidor de papelería",
+  "phone_number": "1234567890",
+  "email": "contacto@proveedor.com",
+  "address": "Av. Principal 123, Ciudad",
+  "is_active": 1
+}
+
+### Actualizar proveedor
+PUT http://localhost:3000/suppliers/ABC1234567890
+Content-Type: application/json
+
+{
+  "name": "Proveedor actualizado",
+  "phone_number": "0987654321"
+}
+
+### Eliminar proveedor
+DELETE http://localhost:3000/suppliers/ABC1234567890

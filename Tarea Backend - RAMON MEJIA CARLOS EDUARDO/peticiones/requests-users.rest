@@ -1,0 +1,94 @@
+###
+GET http://localhost:3000/users/
+
+####
+GET http://localhost:3000/users/9
+
+
+//TAREA CREAR USUARIO
+###
+POST http://localhost:3000/users/
+Content-Type: application/json
+
+{
+"username":"caca",
+"password":"luis",
+"email": "123@123.com"
+
+}
+
+
+###
+//ACTUALIZAR USUARIO
+PUT  http://localhost:3000/users/7
+Content-Type: application/json
+
+{
+"username":"PANCHO VILLA JR",
+"password":"pANCHON",
+"email": "luis@gmail"
+}
+
+//ELIMINAR 
+###
+DELETE  http://localhost:3000/users/9
+# Content-Type: application/json
+
+# {
+# "name": "LUIS carlos alfred"
+
+# }
+
+
+
+
+###
+POST http://localhost:3000/users/ads
+
+//ESTRAR A LOGIN 
+###
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+"username":"mon",
+"password":"mon1234"
+}
+
+
+
+//ESTE ME LO PASO EL IRVING 
+
+###
+GET http://localhost:3000/users/ 
+
+###
+GET http://localhost:3000/users/1
+
+
+###
+GET http://localhost:3000/users/3/
+
+
+###
+POST http://localhost:3000/users/
+Content-Type: application/json
+
+{
+  "name": "cambiale" 
+  
+}
+
+
+###
+PUT http://localhost:3000/users/2
+Content-Type: application/json
+
+{
+  "name": "cambiale" 
+  
+}
+
+
+###
+DELETE http://localhost:3000/users/11
